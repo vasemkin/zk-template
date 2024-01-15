@@ -1,13 +1,39 @@
-# Sample Hardhat Project
+# EVM zk-dApps Template
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Overview
 
-Try running some of the following tasks:
+This project is a zk-dApps template designed for use with Hardhat, an Ethereum development environment. It provides a starting point for building decentralized applications (dApps) with a focus on zero-knowledge proofs (zk-proofs).
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+## Features
+
+- Smart contract development in Solidity
+- Integration with Hardhat for Ethereum development
+- Support for zk-proofs using Circom
+- TypeScript and Shell scripts for seamless dApp development
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vasemkin/zk-template.git
+   ```
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+3. The pnpm installation should triger the preparation script. If this did not happen, run:
+   ```bash
+   pnpm prepare
+   ```
+4. Check that it works:
+   ```bash
+   pnpm test
+   ```
+
+## Usage
+
+Write your circuits in `circuits/` folder and modify the `src/zk.ts` utilties according to your public signals.
+
+## Acknowledgements
+
+Utility functions are adapted from [tornado](https://github.com/tornadocash/tornado-core) and [zk-merkle-tree](https://github.com/TheBojda/zk-merkle-tree) repositories.
