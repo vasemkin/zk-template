@@ -32,7 +32,9 @@ This project is a zk-dApps template designed for use with Hardhat, an Ethereum d
 
 ## Usage
 
-Write your circuits in `circuits/` folder and modify the `src/zk.ts` utilties according to your public signals.
+- Write your circuits in `circuits/` folder
+- Modify the build script `shell/prepare.sh`
+- Modify the `src/zk.ts` utilties according to your public signals
 
 ## Acknowledgements
 
